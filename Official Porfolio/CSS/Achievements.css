@@ -1,0 +1,251 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    color:#ededed;
+}
+
+.header{
+    position: fixed;
+    top:0px;
+    left:0px;
+    width: 100%;
+    background: rgb(32, 64, 119);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    padding:10px;
+}
+
+
+.Dp{position: absolute;
+    top:15%;
+    right:4%;
+    border-radius: 50%;
+}
+
+.Piclogo{
+    margin-left:100px ;
+    height:40px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    transition: transform 0.5s ease; 
+}
+
+.Piclogo:hover {
+    transform: rotate(360deg);
+}
+
+.logo{
+    margin-right:722px ;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight:600;
+    cursor: default;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+}
+
+.navbar a{
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    text-decoration:none;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: .3s;
+    opacity: 0;
+    padding-right: 10px;
+    animation: slidetop .5s ease forwards;
+}
+
+.navbar a:hover{
+    color:#0ef;
+    font-size: 23px;
+}
+
+.home{
+    position:relative;
+    width:100%;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: rgb(7, 25, 67);
+    background-size:cover ;
+    background-position:center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.home-content{
+    max-width:900px;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slidebottom 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin:-3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.logohr{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin-top:-530px;
+    margin-left: -80px;
+    opacity:0;
+    animation: slidebottom .5s ease forwards;
+   
+}
+
+img.Achievementlogo{
+        height: 85px;
+        width:80px;
+}
+
+h3{
+    font-size: 35px;
+}
+
+h6{
+    text-align: left;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left: 32px;
+    
+}
+hr{
+    width:450px;
+}
+.upperpart{
+    position: absolute;
+    top:210px;
+    left: 15%;
+    font-size: 30px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+}
+
+.School{
+    height: 180px;
+    margin-top: -102px;
+    margin-left: -1140px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+b{ 
+    margin-top:-200px;
+    font-size: 20px;
+}
+
+.Elemach{
+    position: absolute;
+    top:35%;
+    left:34%;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+}
+.School2{
+  height: 180px;
+  width:280px;
+  margin-left:-1145px;
+  position: absolute;
+  bottom:5.5%;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+}
+
+.Lowerpart{
+    font-size:23px;
+    position: absolute;
+    bottom:33%;
+    left: 15%;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+}
+
+.College{
+    position: absolute;
+    left:34%;
+    bottom:24%;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    
+}
+h5{
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left: 70px;
+}
+
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity:0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity:1;
+    }
+}
+
+@keyframes slideLeft{
+    0%{
+        transform: translateX(100px);
+        opacity:0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity:1;
+    }
+}
+
+@keyframes slidetop{
+    0%{
+        transform: translateY(100px);
+        opacity:0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity:1;
+    }
+}
+
+@keyframes slidebottom{
+    0%{
+        transform: translateY(-100px);
+        opacity:0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity:1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
